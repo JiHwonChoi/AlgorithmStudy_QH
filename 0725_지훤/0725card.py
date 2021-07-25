@@ -11,7 +11,8 @@ for i in range(a):
     for j in range(10):
         if(howmany[j]>=maxNum):
             maxIndex=j
-    print( maxIndex, maxNum)
+    times=i+1
+    print(f'#{times} {maxIndex} {maxNum}')
 
     
         
