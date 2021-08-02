@@ -1,5 +1,6 @@
 # 2 2 4 4 1
 a= int(input())
+ans=[]
 for i in range(a):
     
     color1=[]
@@ -21,9 +22,11 @@ for i in range(a):
             for y in range (info[1], info[3]+1):
                 color.append((x,y))
         
-    print (color1)
-    print (color2)
     for xy in color1:
         if(xy in color2):
             count+=1
-    print(count)
+    ans.append(count)
+            
+for i,value in enumerate(ans):
+    k=i+1
+    print(f'#{k} {value}')
