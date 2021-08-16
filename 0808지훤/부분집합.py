@@ -8,9 +8,8 @@ for i in range(1<<n):
         if i&(1<<j):
             sublist.append(arr[j])
     subset.append(sublist)
-    
-# print(subset)
 cnt=0
+#이건 푼게 아니야ㅜㅜ
 
 a,b=map(int,input().split(' '))
 for i in subset:
